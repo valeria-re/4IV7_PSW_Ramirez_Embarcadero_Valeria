@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Practico</title>
+    <script src="js/validacion.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <section class="textos-header">
+            <h1>Generador de impuesto compuesto</h1>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;">
+
+                </path></svg></div>
+    </header>
+    <main>
+    <article id="prin">
+       
+            <h2 class="titulo"align="center" >Calcule el interes de su auto</h2>
+            <br><br>
+        
+    <section class="section">
+        <div class="in" align="center">
+            <section>
+                <h4>Datos Iniciales:</h4>
+                <form method= "post" name="formulario" onclick="return validar(this)"action="" onclick="return calcul(this)">
+                <div class="div1">
+                    <input type="text" name="auto" id="auto" value="" placeholder="Valor del Auto">
+                </div>
+                <div class="div2">
+                    <input type="text" name="cuota" id="cuota" value="" placeholder="Cuota Inicial">
+                </div>
+                <div class="div3">
+                    <input type="text" name="mes" id="mes" value="" placeholder="Ingresa el periodo del interes">
+                </div>
+                <br>
+                <div class="cal">
+                    <input type="button" value="Calcular" class="principal" id="add">
+                </div>
+                <div class="borr">
+                    <input type="reset" name="borrar" value="Borrar Datos">
+                </div>
+                <br>
+                <br>
+
+            <div class="tabla" align="center">
+                <table id="table" >
+                    <thead align="center">
+                        <tr>
+                            <th>Costo del Automovil</th>
+                            <br>
+                            <th>Cuota inicial</th>
+                            <br>
+                            <th>Periodo</th>
+                            <br>
+                            <th>Interes</th>
+                            <br>
+                            <th>Cuota final</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contenido" align="center">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot align="center">
+                        <tr>
+                            <td id="valcar">0.00</td>
+                            <td id="ctin">0.00</td>
+                            <td id="per"></td>
+                            <td >3.94%</td>
+                            <td id="tfinal">0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </form>
+     </section>
+     <br>
+     <br>
+     <br>
+     <p id="prueba"></p>
+        </div>
+    
+    </section>
+</article>
+</main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Nombre</h4>
+                <p>Ramirez Embarcadero Valeria</p>
+            </div>
+        </div>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Grupo</h4>
+                <p>4IV7</p>
+            </div>
+        </div>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>vramireze2000@alumno.ipn.mx</p>
+            </div>
+        </div>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Numero de Boleta</h4>
+                <p>2021090328</p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
